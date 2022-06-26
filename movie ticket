@@ -1,0 +1,80 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int a,b,c,p,t=0;
+  here:  printf("Movie List\n Select any one\n1-Beast\n2=Annathe\n3-theri\n4-natpethunai");
+    scanf("%d",&a);
+    if(a==1)
+    {
+        printf("ENter the number of tickets you need\n");
+        scanf("%d",&b);
+        p=b*200;
+        t=t+p;
+        printf("Ticket price = %d\n",p);
+        printf("Do you need any other movie ticket?\n1-yes\n2-no");
+        scanf("%d",&c);
+        if(c==1)
+        {
+            goto here;
+        }
+        else
+        {
+            printf("Total amount to pay = %d",t);
+        }
+    }
+    else if(a==2)
+    {
+        printf("Enter the number of tickets you need\n");
+        scanf("%d",&b);
+        p=b*300;
+        t=t+p;
+        printf("total amount to pay = %d",p);
+        printf("Do you need any other movie ticket?\n1-yes\n2-no");
+        scanf("%d",&c);
+        if(c==1)
+        {
+            goto here;
+        }
+        else
+        {
+            printf("Total amount to pay = %d",t);
+        }
+    }
+    else if(a==3)
+    {
+        printf("Enter the number of tickets you need\n");
+        scanf("%d",&b);
+        p=b*100;
+        t=t+p;
+        printf("total amount to pay = %d",p);
+        printf("Do you need any other movie ticket?\n1-yes\n2-no");
+        scanf("%d",&c);
+        if(c==1)
+        {
+            goto here;
+        }
+        else
+        {
+            printf("Total amount to pay = %d",t);
+        }
+    }
+    else
+    {
+        printf("Enter the number of tickets you need\n");
+        scanf("%d",&b);
+        p=b*200;
+        t=t+p;
+        printf("total amount to pay = %d",p);
+        printf("Do you need any other movie ticket?\n1-yes\n2-no");
+        scanf("%d",&c);
+        if(c==1)
+        {
+            goto here;
+        }
+        else
+        {
+            printf("Total amount to pay = %d",t);
+        }
+    }
+}
